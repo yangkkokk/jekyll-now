@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: beaglebone black i2s dac使用方法
 ---
 
 查看了大量关于beaglebone black的i2s dac输出方法，总结了一下不使用转接板，可以支持runeos,volumo等hifi系统的i2s dac且通用的使用方法。
