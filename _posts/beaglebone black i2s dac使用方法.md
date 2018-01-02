@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: beaglebone black i2s dac使用方法
 ---
 
 
