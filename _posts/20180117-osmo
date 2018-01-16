@@ -1,0 +1,33 @@
+You will need to clone a fork of GR-GSM from GitHub:
+>  https://github.com/axilirator/gr-gsm/tree/fixeria/trx
+>  I am going to send a pull request, as soon as I finish
+>  some things and clean up the code according to your
+>  requirements.
+>
+>   2) Build GR-GSM as usually, and you will see a new GNURadio
+>  block named 'TRX Interface' in gnuradio-companion.
+>
+>   3) Clone my branch of OsmocomBB:
+>  git clone git://git.osmocom.org/osmocom-bb -b fixeria/sdr_phy
+>
+>   4) Make sure you have a fresh version of libosmocore, and build
+>  OsmocomBB without firmware (we don't need it anymore):
+>
+>  cd osmocom-bb/src/
+>  make nofirmware
+>
+>   5) Go to the 'apps/trx/' directory, and launch the 'grgsm_trx.py'
+>  application. One will init a simple follow graph and actual
+>  TRX interface.
+>
+>   6) Go to the 'osmocom-bb/src/host/trxcon/' directory, and run
+>  the 'trxcon' application, which is used to connect OsmocomBB
+>  L2&3 applications with transceiver application.
+>
+>  ./trxcon -d DAPP:DL1C:DSCH
+>
+>   7) Go to the 'osmocom-bb/src/host/layer23/src/misc/' directory
+>  and run the 'ccch_scan' application, and you will see how
+>  it actually works ;)
+>
+>  ./ccch_scan -a ARFCN -i 127.0.0.1
